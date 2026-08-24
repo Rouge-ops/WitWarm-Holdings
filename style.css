@@ -119,12 +119,16 @@ nav a:hover{
 }
 
 
-.nav-inks{
+.nav-links{
     display: flex;
     gap: 30px;
 }
 
-.nav-inks a{
+.nav-links{
+    display: flex;
+}
+
+.nav-links a{
     color: #DCEAF2;
     text-decoration: none;
     text-transform: uppercase;
@@ -132,7 +136,7 @@ nav a:hover{
     transition: 0.2s;
 }
 
-.nav-inks a:hover{
+.nav-links a:hover{
     color: #7dd3fc;
     text-shadow: 0 0 10px rgba(125, 211, 252, 0.8);
 }
@@ -173,12 +177,20 @@ nav a:hover{
     }
     .hamburger{
         display: block;
+        background: none;
+        border: none;
+        color: white;
+        font-size: 28px;
+        cursor: pointer;
+        z-index: 1001;
+        position: relative;
+        cursor: pointer;
     }
-    .nav-inks{
+    .nav-links{
         display: none;
         position: absolute;
-        top: 70px;
-        right: 10px;
+        top: 100%;
+        right: 0;
         flex-direction: column;
         gap: 20px;
         padding: 20px;
@@ -186,12 +198,21 @@ nav a:hover{
         backdrop-filter: blur(15px);
         border: 1px solid #555;
         border-left: 3px solid #f59e0b;
+        z-index: 1001;
     }
-    .nav-inks.active{
+    .nav-links.active{
         display: flex;
     }
     .nav-links a{
+        position: relative;
         padding: 10px;
+        z-index: 1002;
+        pointer-events: auto;
+    }
+    .nav-links .steel-button{
+        display: flex;
+        flex-direction: column;
+        gap: 15px;
     }
 }
 
