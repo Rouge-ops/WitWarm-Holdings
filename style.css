@@ -187,7 +187,7 @@ nav a:hover{
         cursor: pointer;
     }
     .nav-links{
-        display: none;
+        display: none !important;
         position: absolute;
         top: 100%;
         right: 0;
@@ -201,7 +201,7 @@ nav a:hover{
         z-index: 1001;
     }
     .nav-links.active{
-        display: flex;
+        display: flex !important;
     }
     .nav-links a{
         position: relative;
