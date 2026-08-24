@@ -166,7 +166,10 @@ nav a:hover{
 
 @media (max-width: 700px){
     .project-grid{
+        display: grid;
         grid-template-columns: 1fr;
+        gap: 30px;
+        width: 100%;
     }
     .hamburger{
         display: block;
