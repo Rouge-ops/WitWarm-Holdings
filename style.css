@@ -258,6 +258,20 @@ nav a:hover{
     grid-template-columns: repeat(3, 1fr);
     gap: 25px
 }
+
+@media (max-width: 600px){
+    .project-grid{
+        display: grid;
+        grid-template-columns: 1fr;
+        gap: 30px;
+        width: 100%;
+    }
+    .industrial-card{
+        width: 100%;
+        max-width: 100%;
+        box-sizing: border-box;
+    }
+}
 /*Socual Media Buttons*/
 
 @import url('https://fonts.googleapis.com/css?family=Poppins:400,500,600,700&display=swap');
