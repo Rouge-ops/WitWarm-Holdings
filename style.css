@@ -241,7 +241,6 @@ nav a:hover{
 }
 
 .steel-button:hover{
-    background: #3fa9f5;
     color: #0b1d2a;
     box-shadow: 0 0 15px rgba(63, 169, 245, 0.5);
     transform: translateY(-2px);
