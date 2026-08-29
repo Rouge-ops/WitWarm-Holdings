@@ -464,3 +464,32 @@ nav a:hover{
         transform: translateY(0);
     }
 }
+
+
+.gallery{
+    width: 90%;
+    max-width: 900px;
+    margin: 30px auto;
+    grid-template-columns: repeat(auto-fit minmax(200px, 1fr));
+    width: 95%;
+    gap: 25px;
+}
+
+.gallery-card{
+    display: inline-block;
+    aspect-ratio: 4 / 3;
+    width: fit-content;
+    padding: 6px;
+    margin-bottom: 30px;
+    box-sizing: border-box;
+    border: 1px solid rgba(125, 211, 252, 0.8);
+    background: rgba(125, 211, 252, 0.8);
+    border-radius: 20px;
+}
+
+.gallery-card img{
+    width: 100%;
+    height: auto;
+    display: block;
+    max-width: 100%;
+}
