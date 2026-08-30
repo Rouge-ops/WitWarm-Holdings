@@ -504,3 +504,23 @@ nav a:hover{
     }
 
 }
+
+.home-button{
+    position: fixed;
+    top: 20px;
+    left: 20px;
+    padding: 10px 18px;
+    border: 2px solid #6f8795;
+    background: rgba(11, 29, 42, 0.85);
+    color: white;
+    text-decoration: none;
+    font-family: monospace;
+    font-weight: bold;
+    letter-spacing: 2px;
+    z-index: 1000;
+}
+
+.home-button{
+    background: #6f8795;
+    color: #000;
+}
