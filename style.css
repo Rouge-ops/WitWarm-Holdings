@@ -465,26 +465,23 @@ nav a:hover{
     }
 }
 
-
 .gallery{
+    column-count: 2;
+    column-gap: 20px;
     width: 90%;
-    max-width: 900px;
+    max-width: 1200px;
     margin: 30px auto;
-    grid-template-columns: repeat(auto-fit minmax(200px, 1fr));
-    width: 95%;
-    gap: 25px;
 }
 
 .gallery-card{
-    display: inline-block;
-    aspect-ratio: 4 / 3;
-    width: fit-content;
-    padding: 6px;
-    margin-bottom: 30px;
+    width: 100%;
+    padding: 12px;
     box-sizing: border-box;
     border: 1px solid rgba(125, 211, 252, 0.8);
     background: rgba(125, 211, 252, 0.8);
     border-radius: 20px;
+    break-inside: avoid;
+    margin-bottom: 25px;
 }
 
 .gallery-card img{
@@ -492,4 +489,18 @@ nav a:hover{
     height: auto;
     display: block;
     max-width: 100%;
+}
+
+@media (max-width: 800px){
+    .gallery{
+        column-count: 2;
+    }
+
+}
+
+@media (max-width: 500px){
+    .gallery{
+        column-count: 1;
+    }
+
 }
