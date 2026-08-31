@@ -489,6 +489,42 @@ nav a:hover{
     max-width: 100%;
 }
 
+/*Image Viewer*/
+.lightbox{
+    display: none;
+    position: fixed;
+    z-index: 9999;
+    inset: 0;
+    background: rgba(0, 0, 0, 0.1);
+    justify-content: center;
+    padding: 20px;
+}
+
+.lightbox img{
+    max-width: 90%;
+    max-height: 90vh;
+    width: auto;
+    height: auto;
+    object-fit: contain;
+    box-sizing: border-box;
+    border-radius: 20px;
+    overflow: hidden;
+}
+
+.lightbox.active{
+    display: flex;
+}
+
+.lightbox-close{
+    position: absolute;
+    top: 20px;
+    right: 30px;
+    font-size: 35px;
+    color: white;
+    cursor: pointer;
+    z-index: 1000;
+}
+
 @media (max-width: 800px){
     .gallery{
         column-count: 2;

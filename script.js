@@ -18,3 +18,23 @@ window.addEventListener("scroll", () => {const currentScrollY = window.scrollY;
     if (scrollUpDistance >= 30) {
         homeButton.classList.remove("hidden");}} 
         lastScrollY = currentScrollY;});
+
+
+const galleryImages = document.querySelectorAll(".gallery-card img");
+const lightbox = document.getElementById("lightbox");
+const lightboxImage = document.getElementById("lightboxImage");
+const lightboxClose = document.getElementById("lightboxClose");
+galleryImages.forEach(image => {
+    image.addEventListener("click",() => {
+        lightboxImage.src = image.src;
+        lightboxImage.alt = image.alt;
+        lightbox.classList.add("active");
+    });
+});
+lightboxClose.addEventListener("click", () => {
+    lightbox.classList.remove("active");
+});
+lightboxClose.addEventListener("click", () => {
+    if (event.target === lightbox)
+    {lightbox.classList.remove("active");}
+});
