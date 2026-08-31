@@ -8,7 +8,7 @@ hamburger.addEventListener("click", () => {if(navLinks.classList.contains("activ
     else{navLinks.classList.add("active");}});}
 
 const homeButton = document.querySelector(".home-button");
-homeButton.classList.add("hidden");
+
 let lastScrollY = window.scrollY;
 let scrollUpDistance = 0;
 window.addEventListener("scroll", () => {const currentScrollY = window.scrollY; 
