@@ -489,6 +489,12 @@ nav a:hover{
     max-width: 100%;
 }
 
+.gallery.blurred{
+    filter: blur(15px);
+    transform: scale(1.02);
+    transition: filter 0.3s ease, transform 0.3s ease;
+}
+
 /*Image Viewer*/
 .lightbox{
     display: none;
@@ -497,7 +503,6 @@ nav a:hover{
     inset: 0;
     background: rgba(0, 0, 0, 0.1);
     justify-content: center;
-    padding: 20px;
 }
 
 .lightbox img{

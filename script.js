@@ -29,12 +29,17 @@ galleryImages.forEach(image => {
         lightboxImage.src = image.src;
         lightboxImage.alt = image.alt;
         lightbox.classList.add("active");
+        document.querySelector(".gallery")
+        .classList.add("blurred");
     });
 });
 lightboxClose.addEventListener("click", () => {
     lightbox.classList.remove("active");
+    document.querySelector(".gallery").classList.remove("blurred");
 });
-lightboxClose.addEventListener("click", () => {
+lightboxClose.addEventListener("click", (event) => {
     if (event.target === lightbox)
-    {lightbox.classList.remove("active");}
+    {lightbox.classList.remove("active");
+        document.querySelector(".gallery").classList.remove("blurred");
+    }
 });
