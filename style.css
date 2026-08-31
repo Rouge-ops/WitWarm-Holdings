@@ -197,7 +197,6 @@ nav a:hover{
         background: rgba(30, 30, 30, 0.9);
         backdrop-filter: blur(15px);
         border: 1px solid #555;
-        border-left: 3px solid #f59e0b;
         z-index: 1001;
     }
     .nav-links.active{
@@ -241,7 +240,6 @@ nav a:hover{
 }
 
 .steel-button:hover{
-    color: #0b1d2a;
     box-shadow: 0 0 15px rgba(63, 169, 245, 0.5);
     transform: translateY(-2px);
 }
