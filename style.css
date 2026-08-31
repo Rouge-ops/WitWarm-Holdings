@@ -492,13 +492,18 @@ nav a:hover{
 @media (max-width: 800px){
     .gallery{
         column-count: 2;
+        column-gap: 10px;
     }
+    .gallery-card{
+        width: 100%;
+        margin-bottom: 10px;
+        break-inside: avoid;
+    }
+    .gallery-card img{
 
-}
-
-@media (max-width: 500px){
-    .gallery{
-        column-count: 1;
+        width: 100%;
+        height: auto;
+        display: block;
     }
 
 }
